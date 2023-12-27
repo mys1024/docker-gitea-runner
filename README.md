@@ -9,7 +9,7 @@ Start a Gitea Act Runner using **Docker Compose**.
 2. Start:
 
     ```sh
-    docker compose up
+    docker compose up -d
     ```
 
 ## License
