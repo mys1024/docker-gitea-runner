@@ -1,0 +1,18 @@
+version: "3.8"
+
+services:
+  runner:
+    image: gitea/act_runner:latest
+    environment:
+      CONFIG_FILE: /config.yaml
+      GITEA_INSTANCE_URL: ""
+      GITEA_RUNNER_REGISTRATION_TOKEN: ""
+      # GITEA_RUNNER_NAME: ""
+      # GITEA_RUNNER_LABELS: ""
+    restart: always
+    ports:
+      - "29999:29999" # cache service
+    volumes:
+      - ./config.yaml:/config.yaml
+      - ./data:/data
+      - /var/run/docker.sock:/var/run/docker.sock
