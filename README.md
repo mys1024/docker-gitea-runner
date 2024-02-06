@@ -1,6 +1,6 @@
 # docker-gitea-runner
 
-Start a Gitea Act Runner using **Docker Compose**.
+Start a Gitea Act Runner with **Docker Compose**.
 
 ## Usage
 
